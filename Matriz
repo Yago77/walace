@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+#include <conio.h>
+
+int main ()
+
+{
+	setlocale (LC_ALL,"");
+	
+	int matriz[3][4],l,c;
+	
+	printf("Digite os valores para a matriz:\n");
+	                        
+	for(l=0; l<3; l++)
+		for(c=0; c<4; c++)
+	{
+		printf("\nMatriz[%d][%d] = ",l ,c);
+		scanf("%d",&matriz[l][c]);	
+	}	
+	
+	printf("\n--------------------------MATRIZ--------------------\n");
+	
+	for(l=0;l<3;l++){
+		for(c=0;c<3;c++)
+			printf("[%d]",matriz[l][c]);
+		printf("[%d]\n",matriz[l][c]);
+	}
+	getch();
+	return 0;
+}
