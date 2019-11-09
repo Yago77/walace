@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+
+	struct endereco{
+		char rua[100];
+		int num;
+		int cep;	
+	};
+	struct pessoa {
+		char nome[100];
+		int idade;
+		struct endereco end;
+	};
+
+int main()
+
+{
+	
+	struct pessoa pes;
+	printf("Digite o nome da pessoa:\n");
+	scanf("%s", &pes.nome);
+	printf("Digite a idade da pessoa:\n");
+	scanf("%d", &pes.idade);
+	printf("Digite o nome da rua:\n");
+	scanf("%s", &pes.end.rua);
+	printf("Digite o numero da casa:\n");
+	scanf("%d", &pes.end.num);
+	printf("Digite o CEP:\n");
+	scanf("%d", &pes.end.cep);
+
+	printf("Dados da pessoa:\n");
+	
+}
